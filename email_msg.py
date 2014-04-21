@@ -2,7 +2,7 @@
 
 import re
 import os
-import richxerox
+import pyperclip
 
 if __name__ == "__main__":
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
 	message = "".join(out_lines)
 
-        richxerox.copy(text=message)
+	pyperclip.copy(message)
 	print message
         print ""
 	print "Copied to clipboard."
